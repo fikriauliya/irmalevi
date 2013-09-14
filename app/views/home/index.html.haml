@@ -1,2 +1,68 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.erb
+!!!
+%html{:lang => "en"}
+  %head
+    %title Bootswatch: Cerulean
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:charset => "utf-8"}/
+    
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+      
+  %body
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          %a.navbar-brand{:href => "../"} Irma Levi
+          %button.navbar-toggle{"data-target" => "#navbar-main", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => "../"} Resepsi
+            %li
+              %a{:href => "../"} About Irma
+            %li
+              %a{:href => "../"} About Levi
+            %li
+              %a{:href => "../"} How did we meet
+            %li
+              %a{:href => "../"} Guest Book
+    .container
+      #banner.page-header{:style => 'padding-top:20px'}
+        .row
+          .col-lg-12
+            .bs-example
+              .jumbotron
+                %h1 Judul + Cover photo
+                %p This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        .row
+          .col-lg-12
+            %h2 How did we meet
+        .row
+          .col-lg-4
+            .bs-example
+              .list-group
+                %a.list-group-item.active{:href => "#"}
+                  Cras justo odio
+                %a.list-group-item{:href => "#"}
+                  Dapibus ac facilisis in
+                %a.list-group-item{:href => "#"}
+                  Morbi leo risus
+        .row
+          .col-lg-12
+            %h2 About us
+        .row
+          .col-lg-6
+            .panel.panel-success
+              .panel-heading
+                %h3.panel-title Irma Detia Rini
+              .panel-body
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .col-lg-6
+            .panel.panel-primary
+              .panel-heading
+                %h3.panel-title Pahlevi Fikri Auliya
+              .panel-body
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
