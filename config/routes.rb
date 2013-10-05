@@ -1,5 +1,7 @@
 Irmalevi::Application.routes.draw do
-  get "home/index"
+  get "about_us" => "home#about_us"
+  get "wedding" => "home#wedding"
+  get "story_of_us" => "home#story_of_us"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

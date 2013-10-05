@@ -1,0 +1,71 @@
+!!!
+%html
+  %head
+    %title Irma & Levi
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    / Title
+    %title Irma & Levi
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "keywords"}/
+    %meta{content: "", name: "author"}/
+    / Google web fonts
+    %link{href: "http://fonts.googleapis.com/css?family=Droid+Serif:400,700", rel: "stylesheet", type: "text/css"}/
+    %link{href: "http://fonts.googleapis.com/css?family=Droid+Sans:400,700", rel: "stylesheet", type: "text/css"}/
+    / Stylesheets
+    %link{href: "assets/style/bootstrap.css", rel: "stylesheet"}/
+    %link{href: "assets/style/flexslider.css", rel: "stylesheet"}/
+    %link{href: "assets/style/font-awesome.css", rel: "stylesheet"}/
+    /[if IE 7]
+      <link rel="stylesheet" href="assets/style/font-awesome-ie7.css">
+    %link{href: "assets/style/style.css", rel: "stylesheet"}/
+    / HTML5 Support for IE
+    /[if lt IE 9]
+      <script src="assets/js/html5shim.js"></script>
+    / Favicon
+    %link{href: "assets/img/favicon/favicon.png", rel: "shortcut icon"}/
+  %body
+    / Bootstrap navbar
+    .navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav{role: "banner"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".bs-navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        %nav.collapse.navbar-collapse.bs-navbar-collapse{role: "navigation"}
+          %ul.nav.navbar-nav
+            / Navigation links. Note down the class name. It is important
+            %li
+              =link_to("Beranda", root_path)
+            %li
+              =link_to("Tentang kami", about_us_path)
+            %li
+              =link_to("Cerita kami", story_of_us_path)
+            %li
+              =link_to("Pernikahan", wedding_path)
+            %li
+              %a.anchorLink{href: "#guest-book"} Buku Tamu
+
+    = yield
+    / Footer
+    %footer
+      .container
+        .row
+          .col-md-12
+            %p{style: 'text-align:center'}
+              Copyright © 2013 Levi & Irma
+            .border
+        .clearfix
+    / JS
+    %script{src: "assets/js/jquery.js"}
+    %script{src: "assets/js/bootstrap.js"}
+    %script{src: "assets/js/jquery.flexslider-min.js"}
+    %script{src: "assets/js/jquery.anchor.js"}
+    %script{src: "assets/js/custom.js"}
