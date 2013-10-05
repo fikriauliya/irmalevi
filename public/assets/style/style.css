@@ -1,5 +1,5 @@
 body{
-background:#fff url('../assets/well.png') repeat;
+background:#fff url('../img/well.png') repeat;
 padding-top:40px;
 font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
 -webkit-animation-delay: 10s;
@@ -85,7 +85,7 @@ outline: 0;
 ::-moz-focus-inner {border:0;}
 
 .well{
-background:url('../assets/grey.png') repeat;
+background:url('../img/grey.png') repeat;
 border-radius:15px;
 border:1px solid #ddd;
 padding:10px 20px;
@@ -93,7 +93,7 @@ box-shadow:inset 0px 0px 1px #ccc;
 }
 
 .bor{
-background:url('../assets/bor.png') no-repeat;
+background:url('../img/bor.png') no-repeat;
 height:20px;
 width:240px;
 margin:0 auto;
@@ -253,7 +253,7 @@ background:#406903 !important;
 /* Header */
 
 header{
-background:url('../assets/green.jpg') center center repeat;
+background:url('../img/green.jpg') center center repeat;
 height:550px;
 text-align:center;
 padding-top:70px;
@@ -272,7 +272,7 @@ color:#777;
 
 header .well{
 color:#666;
-background:#fff url('../assets/well.png') repeat;
+background:#fff url('../img/well.png') repeat;
 padding:13px 15px;
 box-shadow:inset 0px 0px 2px #111;
 border:1px solid #406903;
@@ -367,7 +367,7 @@ font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
 
 .about{
 padding:10px 20px;
-background:#fafafa url('../assets/wave.png') repeat;
+background:#fafafa url('../img/wave.png') repeat;
 border:1px solid #eee;
 border-radius:10px;
 margin-bottom:10px;
@@ -398,7 +398,7 @@ line-height:20px;
 
 .wedding{
 padding:10px 20px;
-background:#fafafa url('../assets/wave.png') repeat;
+background:#fafafa url('../img/wave.png') repeat;
 border-radius:10px;
 margin-bottom:10px;
 border:1px solid #eee;
