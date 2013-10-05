@@ -1,7 +1,7 @@
 body{
 background:#fff url('../img/well.png') repeat;
 padding-top:40px;
-font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 -webkit-animation-delay: 10s;
 -moz-animation-delay: 10s;
 -o-animation-delay: 10s;
