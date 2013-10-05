@@ -48,7 +48,7 @@ line-height:20px;
 }
 
 p{
-margin:5px 0px;
+margin:15px 0px;
 }
 
 a, a:visited{
@@ -254,7 +254,7 @@ background:#406903 !important;
 
 header{
 background:url('../img/green.jpg') center center repeat;
-height:550px;
+height:450px;
 text-align:center;
 padding-top:70px;
 color:#fff;
