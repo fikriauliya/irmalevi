@@ -10,7 +10,8 @@ class GuestBooksController < ApplicationController
   # POST /guest_books.json
   def create
     @guest_book = GuestBook.new(guest_book_params)
-
+    @guest_book.ip_address = request.remote_ip
+    
     respond_to do |format|
       if @guest_book.save
         format.html { redirect_to guest_books_path, notice: 'Message Anda telah kami terima :)' }
