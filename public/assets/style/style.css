@@ -480,3 +480,29 @@ margin-left:15px;
    }   
   
 }
+
+blockquote p {
+   font-size: 14px;
+   line-height: 1.5;
+   font-weight: 400;
+}
+
+/* Override the bootstrap style */
+blockquote {
+    border-left: none;
+}
+
+/* Insert the pseudo element - replicating what FontAwesome does */
+blockquote:before {
+    content: "\f10d"; 
+    font-family: FontAwesome;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Insert the pseudo element - replicating what FontAwesome does */
+blockquote:after {
+    content: "\f10e"; 
+    font-family: FontAwesome;
+    float: right;
+}
