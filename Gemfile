@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'haml'
 gem 'haml-rails'
+gem 'will_paginate', '~> 3.0.5'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

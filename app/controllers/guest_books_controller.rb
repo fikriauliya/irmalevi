@@ -3,7 +3,7 @@ class GuestBooksController < ApplicationController
 
   def index
     @guest_book = GuestBook.new
-    @guest_books = GuestBook.all.order("created_at DESC")
+    @guest_books = GuestBook.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
   end
 
   # POST /guest_books

@@ -16,12 +16,19 @@
         .alert.alert-danger
           =flash[:alert]
 
+      %div{style: 'text-align:center'}
+        = will_paginate @guest_books
+
       -@guest_books.each do |g|
-        %h4
-          =g.name
-        %p
-          =g.message
+        .wedding
+          %h4
+            =g.name
+          %p
+            =g.message
         .bor
+        
+      %div{style: 'text-align:center'}
+        = will_paginate @guest_books
     .col-xs-4
       = form_for @guest_book, {role: "form"} do |f|
         - if @guest_book.errors.any?
