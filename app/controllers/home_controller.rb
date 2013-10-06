@@ -7,10 +7,4 @@ class HomeController < ApplicationController
 
   def about_us
   end
-
-  def guest_book
-  end
-
-  def story_of_us
-  end
 end

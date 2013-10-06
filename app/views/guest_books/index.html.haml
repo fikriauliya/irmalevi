@@ -1,0 +1,41 @@
+%a#about{name: "about"}
+.border
+.container
+  .row
+    .col-xs-12
+      / Title
+      .head
+        .bor
+        %h2 Buku Tamu
+        .bor
+    .col-xs-8
+      -if flash[:notice]
+        .alert.alert-success
+          =flash[:notice]
+      -if flash[:alert]
+        .alert.alert-danger
+          =flash[:alert]
+
+      -@guest_books.each do |g|
+        %h4
+          =g.name
+        %p
+          =g.message
+        .bor
+    .col-xs-4
+      = form_for @guest_book, {role: "form"} do |f|
+        - if @guest_book.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@guest_book.errors.count, "error")} prohibited this guest_book from being saved:"
+            %ul
+              - @guest_book.errors.full_messages.each do |msg|
+                %li= msg
+
+        .form-group
+          = f.label :name, "Nama"
+          = f.text_field :name, :class => 'form-control'
+        .form-group
+          = f.label :message
+          = f.text_area :message, :class => 'form-control', :style => 'height:200px'
+        .actions
+          = f.submit 'Post', :class => 'btn btn-primary'
