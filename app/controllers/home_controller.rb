@@ -7,4 +7,8 @@ class HomeController < ApplicationController
 
   def about_us
   end
+
+  def music
+  	render layout: false
+  end
 end
